@@ -10,7 +10,7 @@ Para subir o ambiente flutter, instale o [Visual Studio Code](https://code.visua
 ````bash
 # Clone o repositório
 git clone https://github.com/Dallacqua90125/Command_app.git
-cd command_app
+cd command_flutter
 flutter run
 ````
 ### Rodar projeto no celular(Samsung)
