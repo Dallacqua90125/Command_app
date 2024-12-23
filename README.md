@@ -13,16 +13,27 @@ git clone https://github.com/Dallacqua90125/Command_app.git
 cd command_flutter
 flutter run
 ````
-### Rodar projeto no celular(Samsung)
-1. Ative a depuração USB no celular
-   - No seu dispositivo Android, vá para Configurações > Sobre o Telefone.
-   - Toque várias vezes em Número da Compilação até habilitar o modo de desenvolvedor.
-   - Em Configurações > Opções de Desenvolvedor, ative Depuração USB.
-  
-2. Conecte o celular ao computador
-3. instale os drivers do dispositivo (se necessário)
-   - Se estiver usando o Windows, baixe e instale os [Google USB Drivers](https://developer.android.com/studio/run/oem-usb#Drivers)
+### Rodar projeto com emulador
+1. Instale o Android Studio
+   - Baixe e instale a versão lady bug do [android studio](https://developer.android.com/studio?hl=pt-br)
+2. Criar emulador
+   - No android acesse no canto os tres pontos ⁝  e acesse o Virtual Device Menager
+   - Crie um emulador `Pixel 5` e escolha uma imagem `Android API 29 ou API 33` e que seja igual o maior a Android 12
+3. Rodar emulador com flutter
+   - No VScode e com o emulador criado abra um terminal e rode os seguitnes comando:
+````bash
+# Para listar os emuladores
+flutter emulators
 
+# Para rodar um emulador
+flutter emulators --launch <emulator id>
+
+# Listar dispositivos
+flutter devices
+
+# Após rodar o emulador pode rodar o projeto
+flutter run
+````
 
 ## Documentação pra instalar o [SDK do Flutter](https://docs.flutter.dev/get-started/install/windows/mobile)(Se precisar)
 
