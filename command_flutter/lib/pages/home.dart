@@ -6,7 +6,7 @@ import 'package:path/path.dart';
 class APIService {
   static Future<void> sendComandaToAPI(String descricao, double valor) async {
     final response = await http.post(
-      Uri.parse('http://10.0.2.2:3000/comandas'),
+      Uri.parse('http://10.0.2.2:3001/comandas'),
       headers: {'Content-Type': 'application/json'},
       body: '{"descricao": "$descricao", "valor": $valor}',
     );
